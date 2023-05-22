@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+
+}
+
+#footer {
+	background: linear-gradient(70deg, rgba(26,54,68,255), rgba(27,82,113,255));
+}
+
+.enviar {
+   	background-color: rgba(150,201,62,255); 
+    border-color: rgba(150,201,62,255); 
+	font-size: 17px;
+}
+#tickets {
+	color: rgba(150,201,62,255);
+}
+
+#blue100 {
+	background-color: rgb(204,229,255);
+}
+
+#totalAPagar {
+	color: #004085;
+}
