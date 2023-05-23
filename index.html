@@ -94,23 +94,23 @@
 	<div class="col-sm-6">
 	<form action="/action_page.php">
     <label for="sel1" class="form-label">Categoría</label>
-    <select class="form-select" id="sel1" name="sellist1">
-      <option>Estudiante</option>
-      <option>Trainee</option>
-      <option>Junior</option>
+    <select class="form-select" id="categoria" name="sellist1">
+      <option selected value="estudiante">Estudiante</option>
+      <option value="trainee"> Trainee</option>
+      <option value="junior">Junior</option>
     </select>
 	</div>
 	</div>
 	<br>
     <div class="mb-3">
-	<p class="alert alert-primary" id="totalAPagar">Total a pagar: $</p>
+	<p class="alert alert-primary" id="total">Total a pagar: $</p>
     </div>
 		<div class="row pt-3 pb-3">
 	<div class="d-grid gap-2 col-6 mx-auto">
-		<button type="button" class="btn btn-success enviar">Borrar</button>
+		<button type="button" class="btn btn-success enviar btnBorrar">Borrar</button>
 	</div>
 <div class="d-grid gap-2 col-6 mx-auto">
-		<button type="button" class="btn btn-success enviar">Resumen</button>
+		<button type="button" id="resumen" class="btn btn-success enviar btnResumen">Resumen</button>
 </div>
 </div>
 	</div>
