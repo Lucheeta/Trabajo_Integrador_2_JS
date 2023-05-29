@@ -18,18 +18,17 @@ categoria = document.getElementById("categoria");
 const totalAPagar = document.getElementById("total");
 const btnResumen = document.getElementById("resumen");
 const btnBorrar = document.getElementById("borrar");
-const formulario = document.getElementById("formulario");
 
 //Guardo los valores que se ingresaron por input en el objeto creado
 
 cantidad.addEventListener("input", function(event){
     datos.cantidad = event.target.value;
-    console.log("Cantidad: " + event.target.value + " guardada");
+    console.log(`Cantidad ${event.target.value} guardada`);
 });
 
 categoria.addEventListener("change", function(event){
     datos.categoria = event.target.value;
-    console.log("Categoria: " + event.target.value + " guardada");
+    console.log(`Categoria ${event.target.value} guardada`);
 });
 
 //Botón resumen
@@ -43,27 +42,21 @@ resumen.addEventListener("click", function(event){
     totalAPagar.textContent = totalAPagar.textContent.substring(0, indice+1);
     if(categoria == "estudiante") {
         resultado = (200*cantidad)*0.2;
-        console.log("La categoría seleccionada es: " + categoria);
     } 
     else if(categoria == "trainee") {
         resultado = (200*cantidad)*0.5;
-        console.log("La categoria seleccionada es: " + categoria);
     }
     else if(categoria == "junior") {
         resultado = (200*cantidad)*0.85;
-        console.log("La categoria seleccionada es: " + categoria);
     }
+    console.log(`La categoría seleccionada es ${categoria}`);
+
     totalAPagar.textContent += resultado;
     return;
 });
 
 //Botón borrar
 
-borrar.addEventListener("click", function(event){
-    event.preventDefault();
-    let indice = 0;
-    indice = totalAPagar.textContent.indexOf("$");
-    totalAPagar.textContent = totalAPagar.textContent.substring(0, indice+1);
-    formulario.reset();
-	return;
-});
+function borrar() {
+    form.reset
+}
